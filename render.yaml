@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: keld
+    runtime: node
+    buildCommand: "true"
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        sync: false
